@@ -31,3 +31,10 @@
 *.out
 *.app
 
+# Codelite
+.codelite
+.cache
+
+# CMake
+cmake-build-Debug
+cmake-build-Release
