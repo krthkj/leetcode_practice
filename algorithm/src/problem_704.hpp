@@ -33,15 +33,15 @@
  *
  */
 
+#include <algorithm>
 #include <vector>
 
-namespace leet_algo_prob
+namespace leet_algo_prob::prob_704
 {
+enum Result : int { NOT_FOUND = -1 };
 
-class Solution
+class Solution_1 // Recursive
 {
-    enum Result : int { NOT_FOUND = -1 };
-
     int bin_search(std::vector<int>& data, int low, int high, int target)
     {
         if (low <= high) {
@@ -64,4 +64,38 @@ class Solution
         return bin_search(nums, 0, nums.size() - 1, target);
     }
 };
-} // namespace leet_algo_prob
+
+class Solution_2 // using built-in function
+{
+  public:
+    int search(std::vector<int>& nums, int target)
+    {
+        int idx = std::upper_bound(nums.begin(), nums.end(), target) - nums.begin();
+
+        if (idx > 0 && nums[idx - 1] == target) {
+            return idx - 1;
+        } else {
+            return Result::NOT_FOUND;
+        }
+    }
+};
+
+class Solution_3 // using non-recursive
+{
+  public:
+    int search(std::vector<int>& nums, int target)
+    {
+        int low{0}, high{int(nums.size()) - 1}, mid{0};
+        while (low <= high) {
+            mid = low + (high - low) / 2;
+            if (nums[mid] == target)
+                return mid;
+            else if (nums[mid] < target)
+                low = mid + 1;
+            else
+                high = mid - 1;
+        }
+        return Result::NOT_FOUND;
+    }
+};
+} // namespace leet_algo_prob::prob_704
