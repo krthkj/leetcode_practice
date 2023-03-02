@@ -3,6 +3,7 @@
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">
+    <File Name="src/problem_189.hpp"/>
     <File Name="src/problem_977.hpp"/>
     <File Name="src/problem_35.hpp"/>
     <File Name="src/problem_278.hpp"/>
