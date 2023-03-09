@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Project Name="algorithm" Version="11000" InternalType="Library">
+  <Plugins>
+    <Plugin Name="CppCheck"/>
+  </Plugins>
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">
+    <File Name="src/problem_19.hpp"/>
+    <File Name="src/problem_35.hpp"/>
+    <File Name="src/problem_69.hpp"/>
+    <File Name="src/problem_167.hpp"/>
+    <File Name="src/problem_189.hpp"/>
+    <File Name="src/problem_278.hpp"/>
+    <File Name="src/problem_283.hpp"/>
     <File Name="src/problem_344.hpp"/>
     <File Name="src/problem_557.hpp"/>
-    <File Name="src/problem_167.hpp"/>
-    <File Name="src/problem_283.hpp"/>
-    <File Name="src/problem_189.hpp"/>
-    <File Name="src/problem_977.hpp"/>
-    <File Name="src/problem_35.hpp"/>
-    <File Name="src/problem_278.hpp"/>
-    <File Name="src/problem_69.hpp"/>
     <File Name="src/problem_704.hpp"/>
+    <File Name="src/problem_876.hpp"/>
+    <File Name="src/problem_977.hpp"/>
     <File Name="src/algorithm.cpp"/>
   </VirtualDirectory>
   <VirtualDirectory Name="include">

@@ -6,5 +6,6 @@ namespace leet_algo_prob
 
 void printlib(void);
 void run_problem_solutions(void);
-}
-#endif
+} // namespace leet_algo_prob
+
+#endif // LEET_ALGO_HPP

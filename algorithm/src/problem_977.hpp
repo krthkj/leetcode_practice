@@ -26,7 +26,7 @@
  * easy way: First step is to square and there sort.
  *
  * Squaring removed negative, and hence the list is sorted on either side of the zero.
- * 
+ *
  * a=[-4,-3,0,1,2,6,10]; b[0,0,0,0,0,0,0]
  * l=0, r=6, p=6; abs(a.l)<=abs(a.r); b.p=a.r; p--, r--; b[0,0,0,0,0,0,100]
  * l=0, r=5, p=5; abs(a.l)<=abs(a.r); b.p=a.r; p--, r--; b[0,0,0,0,0,36,100]

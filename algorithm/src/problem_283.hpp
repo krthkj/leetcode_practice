@@ -1,7 +1,8 @@
 /***********************************************************************************************************************
  * 283. Move Zeroes
  *
- * Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+ * Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero
+ *elements.
  *
  * Note that you must do this in-place without making a copy of the array.
  *
@@ -25,19 +26,21 @@
  * if fast == 0 then fast++
  * if fast != 0 then swap (fast, slow); slow++; fast++;
  */
- 
- #include <vector>
- 
-class Solution {
-public:
-    void moveZeroes(std::vector<int>& nums) {
+
+#include <vector>
+
+class Solution
+{
+  public:
+    void moveZeroes(std::vector<int>& nums)
+    {
         int n{int(nums.size())};
-        for(int slowPtr{0},fastPtr{0}; slowPtr<n && fastPtr <n;fastPtr++){
-            if (nums[fastPtr]!=0 ){
-                    int tmp{nums[fastPtr]};
-                    nums[fastPtr]= nums[slowPtr];
-                    nums[slowPtr++]= tmp;
-                }
+        for (int slowPtr{0}, fastPtr{0}; slowPtr < n && fastPtr < n; fastPtr++) {
+            if (nums[fastPtr] != 0) {
+                int tmp{nums[fastPtr]};
+                nums[fastPtr] = nums[slowPtr];
+                nums[slowPtr++] = tmp;
+            }
         }
     }
 };
