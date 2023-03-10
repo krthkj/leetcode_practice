@@ -46,7 +46,7 @@ set(WORKSPACE_PATH "${CMAKE_CURRENT_LIST_DIR}/..")
 include_directories(
     .
     ./include
-    ../algorithm/include/
+    ../problems/include/
 
 )
 
@@ -113,7 +113,7 @@ add_executable(leetcode_practice ${RC_SRCS} ${CXX_SRCS} ${C_SRCS} ${ASM_SRCS})
 target_link_libraries(leetcode_practice ${LINK_OPTIONS})
 
 target_link_libraries(leetcode_practice
-    libalgorithm.so
+    libproblems.so
 )
 
 

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeLite_Project Name="algorithm" Version="11000" InternalType="Library">
+<CodeLite_Project Name="problems" Version="11000" InternalType="Library">
   <Plugins>
     <Plugin Name="CppCheck"/>
   </Plugins>
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">
+    <File Name="src/problem_3.hpp"/>
     <File Name="src/problem_19.hpp"/>
     <File Name="src/problem_35.hpp"/>
     <File Name="src/problem_69.hpp"/>
@@ -15,13 +16,14 @@
     <File Name="src/problem_283.hpp"/>
     <File Name="src/problem_344.hpp"/>
     <File Name="src/problem_557.hpp"/>
+    <File Name="src/problem_567.hpp"/>
     <File Name="src/problem_704.hpp"/>
     <File Name="src/problem_876.hpp"/>
     <File Name="src/problem_977.hpp"/>
-    <File Name="src/algorithm.cpp"/>
+    <File Name="src/problems.cpp"/>
   </VirtualDirectory>
   <VirtualDirectory Name="include">
-    <File Name="include/algorithm.hpp"/>
+    <File Name="include/problems.hpp"/>
   </VirtualDirectory>
   <Settings Type="Dynamic Library">
     <GlobalSettings>

@@ -40,7 +40,7 @@
 
 #include <vector>
 
-namespace leet_algo_prob::prob_167
+namespace leet_problems::prob_167
 {
 class Solution
 {
@@ -59,4 +59,4 @@ class Solution
         return {-1, -1};
     }
 };
-} // namespace leet_algo_prob::prob_167
+} // namespace leet_problems::prob_167

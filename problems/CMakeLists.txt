@@ -9,7 +9,7 @@ cmake_minimum_required(VERSION 3.0)
 
 enable_language(CXX C ASM)
 # Project name
-project(algorithm)
+project(problems)
 
 
 
@@ -34,7 +34,7 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CL_OUTPUT_DIRECTORY})
 
 # Top project
 # Define some variables
-set(PROJECT_algorithm_PATH "${CMAKE_CURRENT_LIST_DIR}")
+set(PROJECT_problems_PATH "${CMAKE_CURRENT_LIST_DIR}")
 set(WORKSPACE_PATH "${CMAKE_CURRENT_LIST_DIR}/..")
 
 
@@ -86,7 +86,7 @@ link_directories(
 
 # Define the CXX sources
 set ( CXX_SRCS
-    ${CMAKE_CURRENT_LIST_DIR}/src/algorithm.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/problems.cpp
 )
 
 set_source_files_properties(
@@ -105,8 +105,8 @@ endif(WIN32)
 # Place your code here
 #}}}}
 
-add_library(algorithm SHARED ${RC_SRCS} ${CXX_SRCS} ${C_SRCS} ${ASM_SRCS})
-target_link_libraries(algorithm ${LINK_OPTIONS})
+add_library(problems SHARED ${RC_SRCS} ${CXX_SRCS} ${C_SRCS} ${ASM_SRCS})
+target_link_libraries(problems ${LINK_OPTIONS})
 
 
 

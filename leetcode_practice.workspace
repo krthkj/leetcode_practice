@@ -2,18 +2,18 @@
 <CodeLite_Workspace Name="leetcode_practice" Database="" Version="10000" SWTLW="Yes">
   <WorkspaceParserMacros/>
   <WorkspaceParserPaths/>
-  <Project Name="leetcode_practice" Path="leetcode_practice/leetcode_practice.project" Active="Yes"/>
-  <Project Name="algorithm" Path="algorithm/algorithm.project"/>
+  <Project Name="leetcode_practice" Path="leetcode_practice/leetcode_practice.project" Active="No"/>
+  <Project Name="problems" Path="problems/problems.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug">
       <Environment/>
       <Project Name="leetcode_practice" ConfigName="Debug"/>
-      <Project Name="algorithm" ConfigName="Debug"/>
+      <Project Name="problems" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release">
       <Environment/>
       <Project Name="leetcode_practice" ConfigName="Debug"/>
-      <Project Name="algorithm" ConfigName="Release"/>
+      <Project Name="problems" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

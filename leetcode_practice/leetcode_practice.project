@@ -19,11 +19,11 @@
     <Configuration Name="Debug" CompilerType="GCC-12" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
       <Compiler Options="-Wredundant-decls;-Wmain;-Wundef;-Winline;-Wswitch-enum;-Wmissing-declarations;-Wnon-virtual-dtor;-Wzero-as-null-pointer-constant;-Winit-self;-Wswitch-default;-Wunreachable-code;-pedantic-errors;-g;-O0;-Og;-gdwarf-2;-W;-fopenmp;-Wextra;-std=c++20;-Wall" C_Options="-Wredundant-decls;-Wmain;-Wundef;-Winline;-Wswitch-enum;-Wmissing-declarations;-Wnon-virtual-dtor;-Wzero-as-null-pointer-constant;-Winit-self;-Wswitch-default;-Wunreachable-code;-pedantic-errors;-g;-O0;-Og;-gdwarf-2;-W;-fopenmp;-Wextra;-std=c++20;-Wall" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
         <IncludePath Value="./include"/>
-        <IncludePath Value="../algorithm/include/"/>
+        <IncludePath Value="../problems/include/"/>
       </Compiler>
       <Linker Options="-O0" Required="yes">
         <LibraryPath Value="$(WorkspacePath)/cmake-build-$(WorkspaceConfiguration)/output/"/>
-        <Library Value="libalgorithm.so"/>
+        <Library Value="libproblems.so"/>
       </Linker>
       <ResourceCompiler Options="" Required="no"/>
       <General OutputFile="" IntermediateDirectory="" Command="$(WorkspacePath)/cmake-build-$(WorkspaceConfiguration)/output/$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(WorkspacePath)/cmake-build-$(WorkspaceConfiguration)/output" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
